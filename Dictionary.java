@@ -35,7 +35,6 @@ public class Dictionary {
         if (result) {
             return true;
         }
-
         // Check the non-existing words cache
         result = nonExistingWordsCache.query(word);
         if (result) {
@@ -51,7 +50,6 @@ public class Dictionary {
             return false;
         }
     }
-
 
 
 
@@ -76,8 +74,9 @@ public class Dictionary {
             }
             return found;
         } catch (IOException e) {
-            System.err.println("IO Error");
+           System.err.println("IO Error");
             return false;
         }
     }
+
 }
